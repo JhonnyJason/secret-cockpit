@@ -1,0 +1,4 @@
+node_modules
+testing/document-root/*
+testing/certificates/*
+.build-config

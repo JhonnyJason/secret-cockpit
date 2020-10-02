@@ -1,0 +1,8 @@
+{
+    "files.exclude": {
+        "**/node_modules": true,
+        "toolset/build/": true,
+        "output/*": true,
+        "testing/document-root/*": true
+    }
+}
