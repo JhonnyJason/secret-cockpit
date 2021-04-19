@@ -1,3 +1,4 @@
+[![hackmd-github-sync-badge](https://hackmd.io/wPTUeTzwQ3q9uXhuKHf3Cg/badge)](https://hackmd.io/wPTUeTzwQ3q9uXhuKHf3Cg)
 ###### tags: `documentation` `design`
 
 # The Secrets Cockpit
