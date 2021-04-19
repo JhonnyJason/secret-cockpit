@@ -6,17 +6,17 @@
 This is a UI which enables free account management using the [Secret Management Style](https://hackmd.io/PZjpRfzPSBCqS-8K54x2jA)
 
 ## Account types
-As we may associate much better the concept of an account. We will use the account here.
-This way a key is determining an account. One specific key will have an id to be indentifiable.
-Because the key is the essential part to decrypt and have access to whatever the account should be used for we distinguish the account types in the way how we handle the keys.
+As we may associate much better the concept of an account. We will use the word "account" here.
+This way a key is for accesssing the account. One specific key will have an id to be externally indentifiable.
+Because the key is the essential part to decrypt and have access to whatever the account should be used for - we distinguish the account types in the way how we handle the keys.
 
 1. Unsafe Keys
 2. Floating Keys 
 3. Signature Keys
 
-The discrimination of those key types is merely for security considerations and important only to the Secrets Cockpit for how the keys are generated and if they are allowed to be stored - from the perspective of any secret-management-service no such discrimination exists.
+The discrimination of those key types is merely for security considerations and important to the Secrets Cockpit for how the keys are generated and if they are allowed to be stored - from the perspective of any secret-management-service no such discrimination exists.
 
-To Counter potential Confusion about the wordings:
+To counter potential confusion about the wordings:
 
 - Key = Seccret Key = Private Key
 - Id = Public Key
@@ -72,7 +72,7 @@ Outside of the specific instance  of the Secret Cockpit these aliases are not kn
 - [x] detect and import stored unsafe keys
 
 ## Features v0.2
-- [ ] Use MetaMask for Signature Secrets
+- [ ] Use MetaMask for Signature Keys
 - [ ] Keylogger Protection
 - [ ] Data Manager for synchronizing whole local State
 
