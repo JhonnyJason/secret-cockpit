@@ -3,22 +3,25 @@
 
 # The Secrets Cockpit
 
-This is a UI which enables free account management using the [Secret Management Style](https://hackmd.io/PZjpRfzPSBCqS-8K54x2jA)
+![](https://hackmd.io/_uploads/ryw0dhpUt.jpg)
+Sure!:-)
 
+This is a UI which enables free account management using the [Secret Management Style](https:/r/hackmd.io/PZjpRfzPSBCqS-8K54x2jA?view).
+
+ -> [The Code on Github](https://github.com/JhonnyJason/secret-cockpit).
 ## Account types
-As we may associate much better the concept of an account. We will use the word "account" here.
-This way a key is for accesssing the account. One specific key will have an id to be externally indentifiable.
+As we all know the concept of an account and we could associate the purpose as quite the same as such account, we will use the word account here.
+This way a key is for accesssing an account. One specific key will have an id to be externally identifiable.
 Because the key is the essential part to decrypt and have access to whatever the account should be used for - we distinguish the account types in the way how we handle the keys.
 
 1. Unsafe Keys
 2. Floating Keys 
-3. Signature Keys
 
 The discrimination of those key types is merely for security considerations and important to the Secrets Cockpit for how the keys are generated and if they are allowed to be stored - from the perspective of any secret-management-service no such discrimination exists.
 
 To counter potential confusion about the wordings:
 
-- Key = Seccret Key = Private Key
+- Key = Secret Key = Private Key
 - Id = Public Key
 
 ### Unsafe Keys
@@ -31,12 +34,6 @@ There are keys to never be stored anywhere. They are generated out of a seedphra
 As soon as either the seedphrase or the key is stored somewhere, as same as when the seedphrase is weak - the key should be considered "unsafe" anyways.
 
 Such a key as derived from a strong seedphrase may be used for a Master SecretSpace which is storing other "Unsafe Keys" for mobility.
-
-### Signature Keys
-Also these keys are never being stored anywhere. They are derived from a specific or a random string, signed with your Wallet Private Key using MetaMask then hashed.
-
-Also such a key may be used for a Master SecretSpace to store other "Unsafe Keys".
-Also you could remember the specific seedphrade for signing and store it on your devices without significant loss of the security properties.
 
 ## Aliases
 For convenience we have introduced the feature to provide an alias for specific Ids.
@@ -70,9 +67,9 @@ Outside of the specific instance  of the Secret Cockpit these aliases are not kn
 - [x] QR-Code Export
 - [x] messagebox for user-feedback
 - [x] detect and import stored unsafe keys
+- [ ] use QR-display and QR-scan on every input field
 
 ## Features v0.2
-- [ ] Use MetaMask for Signature Keys
 - [ ] Keylogger Protection
 - [ ] Data Manager for synchronizing whole local State
 
